@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Lenis from 'lenis';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { CustomCursor } from './components/CustomCursor';
 import { IntroAnimation } from './components/IntroAnimation';
 import { Navigation } from './components/Navigation';
@@ -75,6 +76,9 @@ export const App: React.FC = () => {
         {/* 8. Bold Dark Contact Section */}
         <ContactSection />
       </main>
+
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 };
